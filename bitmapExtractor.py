@@ -23,6 +23,5 @@ while len(iconDirEntries) < imgCount:
     iconDirEntries.append(iconDirEntry)
 
 for imageNum, imageHeader in enumerate(iconDirEntries):
-    print(imageHeader)
     print("Image Number: {0}\n\tFile Type: {8}\n\tWidth: {1}\n\tHeight: {2}\n\tColor Count: {3}\n\tPlanes: {4}\n\tBitCount: {5}\n\tImage Data Size In Bytes: {6}\n\tImage Data Offset: {7}"
     .format(imageNum+1, *imageHeader, icoType))
